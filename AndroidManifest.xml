@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.citypediafinal"
+    android:versionCode="1"
+    android:versionName="1.0" >
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/cp_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.citypediafinal.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+             >
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.citypediafinal.BaseActivity"
+            android:label="@string/title_activity_base"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.citypediafinal.RegistrationActivity"
+            android:label="@string/title_activity_registration"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.citypediafinal.DashboardActivity"
+            android:label="@string/title_activity_dashboard"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.citypediafinal.AboutActivity"
+            android:label="@string/title_activity_about"
+            android:theme="@android:style/Theme.Dialog"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.citypediafinal.ShareExpActivity"
+            android:label="@string/title_activity_share_exp"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.citypediafinal.SelectCityActivity"
+            android:label="@string/title_activity_select_city"
+            android:theme="@android:style/Theme.Dialog"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.citypediafinal.UpdateProfileActivity"
+            android:label="@string/title_activity_update_profile"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.citypediafinal.ChangePasswordActivity"
+            android:label="@string/title_activity_change_password"
+            android:theme="@android:style/Theme.Dialog"
+            android:screenOrientation="portrait" >
+        </activity>
+       
+        <activity
+            android:name="com.example.citypediafinal.UserMenuActivity"
+            android:label="@string/title_activity_user_menu"
+            android:theme="@android:style/Theme.Dialog"
+            android:screenOrientation="portrait" >
+        </activity>
+       
+        <activity
+            android:name="com.example.citypediafinal.BrowsingContentActivity"
+            android:label="@string/title_activity_browsing_content"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.citypediafinal.ContentDisplayActivity"
+            android:label="@string/title_activity_content_display"
+            android:screenOrientation="portrait" >
+            
+        </activity>
+        <activity
+            android:name="com.example.citypediafinal.UserProfileActivity"
+            android:label="@string/title_activity_user_profile"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

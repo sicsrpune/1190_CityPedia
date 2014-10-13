@@ -1,0 +1,219 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bg"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <ViewFlipper
+            android:id="@+id/viewFlipper1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TabHost
+                android:id="@android:id/tabhost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TabWidget
+                        android:id="@android:id/tabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" >
+                    </TabWidget>
+
+                    
+
+                    <FrameLayout
+                        android:id="@android:id/tabcontent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <LinearLayout
+                            android:id="@+id/User_Profile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            
+                            
+                             
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/Manage_Content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+                        </LinearLayout>
+
+                       
+                    </FrameLayout>
+                </LinearLayout>
+            </TabHost>
+
+        </ViewFlipper>
+
+        <EditText
+            android:id="@+id/editFname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:inputType="text"
+            android:padding="5dp"
+            android:hint="@string/hint_fname"
+            android:textSize="@dimen/text_size" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/editLname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:inputType="text"
+            android:padding="5dp"
+            android:hint="@string/hint_lname"
+            android:textSize="@dimen/text_size" >
+
+            <requestFocus />
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:padding="1dp"
+            android:textSize="@dimen/text_size" >
+
+            
+                
+                <RadioGroup
+                android:id="@+id/radioGroupGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/lbl_male"
+                    android:textColor="#000000" />
+                
+                <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_female"
+                android:textColor="#000000" />
+                
+                
+            </RadioGroup>
+            
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editDob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:inputType="date"
+            android:padding="5dp"
+            android:hint="@string/hint_dob"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_size" />
+
+        <EditText
+            android:id="@+id/editAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:inputType="textPostalAddress"
+            android:padding="5dp"
+            android:hint="@string/hint_address"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_size" />
+
+        <Spinner
+            android:id="@+id/spinnerUserCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:drawSelectorOnTop="true"
+            android:entries="@array/array_myCity"
+            android:padding="5dp"
+            android:prompt="@string/city_title" />
+        
+        <EditText
+            android:id="@+id/editState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:inputType="text"
+            android:padding="5dp"
+            android:hint="State"
+            
+            android:textSize="@dimen/text_size" />
+        
+        
+
+        <EditText
+            android:id="@+id/editContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:inputType="phone"
+            android:padding="5dp"
+            android:hint="@string/hint_contact"
+            
+            android:textSize="@dimen/text_size" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            style="@style/AppTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/buttons"
+            android:text="Update Profile"
+            android:textColor="#ffff"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/textChangePwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:text="Change Password"
+            android:textColor="#ffff"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</ScrollView>

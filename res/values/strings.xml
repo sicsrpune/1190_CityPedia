@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CityPedia</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="title_activity_registration">CityPedia Registration</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+    <string name="title_activity_about">About CityPedia</string>
+    <string name="title_activity_share_exp">Share Experience</string>
+    <string name="category_heading">Select Category</string>
+    <string name="subCategory_heading">Select Sub-Category</string>
+    <string name="title_activity_select_city">Select City</string>
+    <string name="title_activity_update_profile">Update Profile</string>
+    <string name="title_activity_change_password">Change Password</string>
+    <string name="title_activity_user_menu">Menu</string>
+    <string name="title_activity_browsing_content">Browse Experience</string>
+    <string name="title_activity_content_display">Experience</string>
+    <string name="title_activity_user_profile">Update Profile</string>
+    
+
+    <string-array name="category">
+        <item>Select Catagory</item>
+        <item>Hangout</item>
+        <item>Food Zone</item>
+        <item>Shopping</item>
+        <item>Event</item>
+        <item>Organisation</item>
+        <item>Other</item>
+    </string-array>
+    
+    <string-array name="hangout">
+        <item>Outing</item>
+        <item>Pub</item>
+        <item>Multiplex</item>
+        <item>Parks</item>
+        <item>Holly Place</item>
+        <item>Other</item>
+    </string-array>
+    
+    <string-array name="foodzone">
+        <item>Restaurant</item>
+        <item>Dhaba</item>
+        <item>Cafe</item>
+        <item>Street Food</item>
+        <item>Tiffin Service</item>
+        <item>Other</item>
+    </string-array>
+    
+    <string-array name="shopping">
+        <item>Shopping Mall</item>
+        <item>Show-Room</item>
+        <item>Street Shopping</item>
+        <item>Local Shop</item>
+        <item>Other</item>
+    </string-array>
+    
+    <string-array name="event">
+        <item>IT</item>
+        <item>Business</item>
+        <item>Music</item>
+        <item>Dance</item>
+        <item>Fair</item>
+        <item>Other</item>
+    </string-array>
+    
+    <string-array name="organisation">
+        <item>School</item>
+        <item>College</item>
+        <item>Hospital</item>
+        <item>Company</item>
+        <item>NGO</item>
+        <item>Other</item>
+    </string-array>
+    
+    <string-array name="other">
+        <item>Other</item>
+    </string-array>
+
+    <string name="city_title">Select City</string>
+    <string name="lblBtnDel">Delete Selected Items</string>
+
+    <string-array name="array_myCity">        
+        <item>Select City</item>
+		<item>Ahmedabad</item>
+        <item> Pune </item>
+        <item>Surat</item>
+        <item>Nagpur</item>
+    </string-array>
+    
+    <string-array name="array_allCity">
+        <item>Select City</item>
+        <item>Ahmedabad</item>
+        <item> Pune </item>
+        <item>Surat</item>
+        <item>Nagpur</item>
+        <item>Delhi</item>
+        <item>Rajasthan</item>
+        <item>Vadodara</item>
+        <item>Gandhinagar</item>
+    </string-array>
+
+   
+    
+    <string name="btn_login">Login</string>
+    <string name="btn_register">Register</string>
+    <string name="btn_share">Share Experience</string>
+    <string name="btn_update">Update</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_follow">Follow</string>
+    <string name="btn_comment">Post</string>
+    
+    
+    <string name="hint_userId">Email Id</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_fname">First Name</string>
+    <string name="hint_lname">Last Name</string>
+    <string name="hint_dob">Birth Date (YYYY-MM-DD)</string>
+    <string name="hint_email">Email Id</string>
+    <string name="hint_date">YYYY-MM-DD</string>
+    <string name="hint_nPassword">New Password</string>
+    <string name="hint_cPassword">Confirm Password</string>
+    
+	<string name="hint_title">Title (Name of the place) </string>
+    <string name="hint_experience">Enter your Experience here ..</string>
+    <string name="hint_image">imaage.png</string>
+    <string name="hint_place">Place or Area</string>
+    <string name="hint_city">City</string>
+    <string name="hint_state">State</string>
+    <string name="hint_contact">Contact No.</string>
+    
+    <string name="lbl_selectCity">Select City</string>
+    <string name="lbl_profile">Profile</string>
+    <string name="lbl_notification">Notifications</string>
+    <string name="lbl_trendingThings">Trending Things</string>
+    <string name="lbl_history">History</string>
+    <string name="lbl_logout">logout</string>
+    <string name="lbl_singUp">Sign Up</string>
+    <string name="lbl_genger">Gender</string>
+    <string name="btnChange">Change</string>
+    <string name="btnCancel">Cancel</string>
+    <string name="lbl_male">Male</string>
+    <string name="lbl_female">Female</string>
+    <string name="hint_address">Address</string>
+    <string name="line1">CityPedia gives you information about various city.</string>
+    <string name="line2">CityPedia gives others thoughts about their city.</string>
+    <string name="line3">CityPedia lets you discover recommended restaurants, cafes, organisations, hangout places, events etc.</string>
+    
+
+</resources>

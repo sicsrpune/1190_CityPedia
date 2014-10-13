@@ -1,0 +1,134 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+     
+ <LinearLayout
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:background="@drawable/bg"
+     android:orientation="vertical"
+     android:padding="20dp" >
+
+     <Spinner
+         android:id="@+id/spinner_category"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:background="@android:drawable/btn_dropdown"
+         android:entries="@array/category"
+        />
+     	 
+     <Spinner
+         android:id="@+id/Spinner_subCategory"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:background="@android:drawable/btn_dropdown" />
+	
+     <EditText
+         android:id="@+id/editTitle"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:background="#ffffff"
+         android:inputType="text"
+         android:padding="10dp"
+         android:hint="Eg. Eden Courte"
+         android:textSize="@dimen/text_size" />
+
+    <EditText
+    	 android:id="@+id/editDOV"
+		 android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:background="#ffffff"        
+         android:inputType="date"
+         android:padding="10dp"
+         android:hint="Date Visited"
+         android:textSize="@dimen/text_size" />
+
+     <EditText
+         android:id="@+id/editExperiance"
+         android:layout_width="match_parent"
+         android:layout_height="135dp"
+         android:layout_marginTop="20dp"
+         android:background="#ffffff"
+         android:inputType="textMultiLine"
+         android:padding="10dp"
+         android:hint="@string/hint_experience"
+         android:textSize="@dimen/text_size" />
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="30dp"
+         android:orientation="horizontal" >
+
+         <Button
+             android:id="@+id/btnImageUpload"
+             style="@style/AppTheme"
+             android:layout_width="wrap_content"
+             android:layout_height="40dp"
+             android:layout_gravity="center"
+             android:layout_weight="0.15"
+             android:background="@drawable/buttons"
+             android:text="Upload"
+             android:textColor="#ffff"
+             android:textSize="@dimen/text_size" />
+
+         <TextView
+             android:id="@+id/textImageName"
+             android:layout_width="wrap_content"
+             android:layout_height="40dp"
+             android:layout_gravity="center"
+             android:layout_marginLeft="20dp"
+             android:layout_weight="0.22"
+             android:background="#ffff"
+             android:hint="@string/hint_image"
+             android:padding="20dp"
+             android:textColor="#000"
+             android:textSize="@dimen/text_size" />
+
+     </LinearLayout>
+
+     <EditText
+         android:id="@+id/editPlace"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:background="#ffffff"
+         android:inputType="text"
+         android:padding="10dp"
+         android:hint="@string/hint_place"
+         android:textSize="@dimen/text_size" />
+
+     <TextView
+         android:id="@+id/textCity"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:background="#ffffff"
+         android:padding="10dp"
+         android:hint="@string/hint_city"
+         android:textSize="@dimen/text_size" />
+
+     <RatingBar
+			android:id="@+id/rating"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal" />
+                    
+     <Button
+         android:id="@+id/btnShareExp"
+         style="@style/AppTheme"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="40dp"
+         android:background="@drawable/buttons"
+         android:text="Share Experience"
+         android:textColor="#ffff"
+         android:textSize="@dimen/text_size" />
+ </LinearLayout>
+
+</ScrollView>

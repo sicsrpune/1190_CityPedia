@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"  >
+    
+   
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:clickable="true"
+            android:text="@string/lbl_selectCity"
+            android:textColor="#ffff"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+        
+        <Spinner
+            android:id="@+id/spinnerCity"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:drawSelectorOnTop="true"
+            android:entries="@array/array_allCity"
+            android:gravity="center_horizontal"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btnSelectCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            
+            android:text="Select" />
+
+</LinearLayout>
